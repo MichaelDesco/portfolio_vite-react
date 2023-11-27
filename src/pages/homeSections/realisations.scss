@@ -7,15 +7,18 @@
     background-repeat: no-repeat;
     padding: 8vh 0;
     .waviy{
-        display: flex;
-        align-items: center;
+        
+        padding-left: 6vw;
+        padding-bottom: 4vh;
+        @media screen and (max-width:767px) {
+            padding-left: 0;
+        }
         h3 {
-            padding-left: 6vw;
-            padding-bottom: 4vh;
             letter-spacing: 4px;
-            @media screen and (max-width: 479px) {
+            @media screen and (max-width:767px) {
                 text-align: center;
-                padding-left: 0;
+            }
+            @media screen and (max-width: 479px) {
                 padding-bottom: 6vh;
             }
             .letter {
@@ -34,11 +37,17 @@
                 }
             }
         }
+        p{
+            @media screen and (max-width:767px) {
+                text-align: center;
+            }
+        }
     }
 
     .projects {
         position: relative;
         display: flex;
+        justify-content: space-around;
         align-items: center;
         @media screen and (max-width:479px) {
             flex-direction: column;
