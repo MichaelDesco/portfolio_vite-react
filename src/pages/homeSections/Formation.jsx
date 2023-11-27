@@ -44,7 +44,10 @@ const Formation = () => {
                         <div className='cv-picture'>
                             <img src="./images/cvDescoMike.jpg" alt="" />
                         </div>
-                        <a className='cvDownload' href="https://drive.google.com/u/0/uc?id=1DfLpKOL9NnSmF9d964XwRQycM8GcUUeD&export=download">
+                        {/* <a className='cvDownload' href="https://drive.google.com/u/0/uc?id=1DfLpKOL9NnSmF9d964XwRQycM8GcUUeD&export=download">
+                            <FontAwesomeIcon className='fa-download fa-bounce' icon={faDownload} />
+                        </a> */}
+                        <a className='cvDownload' href="./download/DescoMikeCV_271123.pdf" download>
                             <FontAwesomeIcon className='fa-download fa-bounce' icon={faDownload} />
                         </a>
                     </div>
