@@ -1,0 +1,141 @@
+.formation{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-image: url(../../../public/images/colorkit2reverse.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 767px){
+        height: auto;  
+    }
+
+    .parcours{
+        height: 75vh;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+            height: auto;
+            padding: 5vh 0; 
+        }
+        .introParcours{
+            padding: 4vh 2vw;
+            background-color: white;
+            box-shadow: 3px 5px 8px black;
+            position: relative;
+            @media screen and (max-width: 767px){
+                width: 80vw;
+                margin-bottom: 5vh;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }            
+            h3{
+                padding: 1vh 0 4vh;
+                white-space: wrap;
+            }
+            .experience{
+                padding: 2vh 0;
+                .formation-picture{
+                    display: flex;
+                    width: 9vw;
+                    margin-right: 2vw;
+                    @media screen and (max-width: 767px){
+                        justify-content: center;
+                        width: 100%;
+                    }
+                    img{
+                        height: 4vh;
+                        margin-bottom: 5%;
+                    }
+                }
+                .experienceInfo{
+                    p:first-of-type{
+                        color: #52796F;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .cvParcours{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3vh 2vw;
+            background-color: white;
+            box-shadow: 3px 5px 8px black;
+            @media screen and (max-width: 767px){
+                width: 80vw;
+            }
+            h3{
+                text-align: center;
+                margin-bottom: 10%;
+            }
+            img{
+                box-shadow: 1px 1px 3px black;
+                height: 38vh;
+                @media screen and (max-width: 767px){
+                    height: auto;
+                    width: 70vw;
+                }
+                &:hover {
+                    height: auto;
+                    position: absolute;
+                    right: 10%;
+                    top: 11%;
+                    width: 80vw;
+                    z-index: 999;
+                    @media screen and (max-width: 767px){
+                        position: relative;
+                        width: 70vw;
+                        right: 0;
+                    }
+                }
+            }
+            .cvDownload{
+                margin-top: 3vh;
+                .fa-download{
+                    color: #3abeff;
+                    font-size: 1.8rem;
+                    text-shadow: 1px 1px 1px #E0FF4F;
+                }               
+            }
+        }
+    }
+}
+.objectif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 50px grey;
+    padding: 4vh 0;
+    min-height: 20vh;
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 0.5px 0.5px 1px black;
+        text-align: center;
+        padding-top: 3vh;
+        @media screen and (max-width: 1277px){
+            font-size: 1.9rem;              
+        }
+        @media screen and (max-width: 1023px){
+            font-size: 1.8rem;    
+        }
+        @media screen and (max-width: 767px){
+            font-size: 1.7rem;    
+        }
+        @media screen and (max-width: 479px){
+            font-size: 1.6rem;    
+        }
+        @media screen and (max-width: 279px){
+            font-size: 1.5rem;    
+        }
+    }
+}
