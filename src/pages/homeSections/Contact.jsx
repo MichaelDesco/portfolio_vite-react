@@ -119,7 +119,7 @@ const Contact = () => {
                         <div className="contactTool">
                             <div className="contactMail">
                                 <label>Mail*</label>
-                                <input type="text" name='mail' required='requis'/>
+                                <input type="mail" name='mail' required='requis'/>
                             </div>
                             <div className="contactTel">
                                 <label>Téléphone</label>

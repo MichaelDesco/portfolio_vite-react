@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <div className="headerTop">
                 <div className="container-profil-picture">
-                    <img className="profil-picture" src="../images/avatar.png" alt="" />
+                    <img className="profil-picture" src="../images/avatar.webp" alt="" />
                 </div> 
                 <div className="header-title">
                     <div className="headerNameLink">
@@ -28,7 +28,7 @@ const Header = () => {
                     <h2>DÉVELOPPEUR D'APPLICATION WEB</h2>
                 </div>
                 <div className="container-laptop-picture">
-                    <img className="laptop-picture" src="../images/sticker.png" alt="" />
+                    <img className="laptop-picture" src="../images/sticker.webp" alt="" />
                 </div>
             </div>
         </>
