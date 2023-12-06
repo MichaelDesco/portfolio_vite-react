@@ -42,7 +42,7 @@ const Formation = () => {
                     <div className='cvParcours'>
                         <h3>Mon CV</h3>
                         <div className='cv-picture'>
-                            <img src="./images/cvDescoMike.jpg" alt="" />
+                            <img src="./images/cvDescoMike.webp" alt="" />
                         </div>
                         {/* <a className='cvDownload' href="https://drive.google.com/u/0/uc?id=1DfLpKOL9NnSmF9d964XwRQycM8GcUUeD&export=download">
                             <FontAwesomeIcon className='fa-download fa-bounce' icon={faDownload} />
