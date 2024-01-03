@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Legalmention.scss';
+import './legalmention.scss';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
