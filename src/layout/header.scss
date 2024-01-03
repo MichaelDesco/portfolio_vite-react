@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Londrina";
-    src: url("../../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf");
+    src: url("../../public/fonts/LondrinaSolid-Regular.ttf");
 }
 @font-face {
     font-family: "Rubik";
-    src: url("../../public/fonts/Rubik/RubikMoonrocks-Regular.ttf");
+    src: url("../../public/fonts/RubikMoonrocks-Regular.ttf");
 }
 
 .headerTop{
     width: 100%;
     padding: 2vh 2vw;
-    background-color: #52796F;
+    background-color: #8EB5AC;
     display: flex;
     align-items: center;
     position: relative;
@@ -116,59 +116,25 @@
                 }
             }
             .container-link{
-                width: 8vw;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
-                @media screen and (max-width: 1023px) {
-                    width: 10vw;
-                    height: 5vh;
-                }
-                @media screen and (max-width: 767px){
-                    width: 12vw;
-                }
-                @media screen and (max-width: 479px){
-                    width: 15vw;
-                }
-                @media screen and (max-width: 279px){
-                    width: 30vw;
-                }
+                width: 15vw;
 
                 a{
-                    width: 2.5vw;
-                    font-size: 1.5rem;
+                    background-color: white;
+                    padding: 1%;
+                    border-radius: 12%;
+                    margin: 1vh 0.5vw 0;
                     color: #3abeff;
+                    display: inline-flex;
+                    // align-items: center;
+                    // justify-content: center;
                     &:hover{
-                        color: #E0FF4F;
-                        font-size: 1.7rem;
+                        color: white;
+                        background-color: #3abeff;
                     }
-                    @media screen and (max-width: 1277px) {
-                        font-size: 1.4rem;
-                        &:hover{
-                            color: #E0FF4F;
-                            font-size: 1.6rem;
-                        }
-                    }
-                    @media screen and (max-width: 1023px) {
-                        font-size: 1.3rem;
-                        &:hover{
-                            color: #E0FF4F;
-                            font-size: 1.5rem;
-                        }
-                    }
-                    @media screen and (max-width: 767px) {
+                    .iconSize{
                         font-size: 1.2rem;
-                        &:hover{
-                            color: #E0FF4F;
-                            font-size: 1.4rem;
-                        }
-                    }
-                    @media screen and (max-width: 479px) {
-                        font-size: 1rem;
-                        &:hover{
-                            color: #E0FF4F;
-                            font-size: 1.1rem;
-                        }
                     }
                 }
             }

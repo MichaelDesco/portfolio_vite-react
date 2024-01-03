@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Londrina";
-  src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf");
+  src: url("../public/fonts/LondrinaSolid-Regular.ttf");
 }
 body{
   width: 100%;
@@ -71,7 +71,7 @@ h4{
 
 @font-face {
   font-family: "Spartan";
-  src: url("../public/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
+  src: url("../public/fonts/LeagueSpartan-VariableFont_wght.ttf");
 }
 p, .langage, .transitionParagraph{
   font-family: "Spartan";
@@ -142,6 +142,11 @@ p, .langage, .transitionParagraph{
 /* Largeur de la barre de défilement */
 ::-webkit-scrollbar {
   display: none;   
+}
+
+/* Champ du formulaire */
+input, textarea{
+  padding: 0.5vh 0.5vw;
 }
 
 // ANIMATION TEXT TRANSITION 

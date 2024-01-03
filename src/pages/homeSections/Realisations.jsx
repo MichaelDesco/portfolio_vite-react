@@ -85,15 +85,20 @@ const Realisations = () => {
         const cardBacks = document.querySelectorAll('.cardBack');
         cardBacks.forEach(cardBack => {
             const img = cardBack.querySelector('img');
-            const width = img.offsetWidth;
-            // Ajustez desiredHeight en fonction de la largeur de l'écran
-            let desiredHeight;
-            if (window.innerWidth < 479) {
-                desiredHeight = width * 0.98;
-            } else {
-                desiredHeight = width * 0.95; // ou tout autre facteur souhaité
+            if (img) {
+                const width = img.offsetWidth;
+    
+                // Ajustez desiredHeight en fonction de la largeur de l'écran
+                let desiredHeight;
+    
+                if (window.innerWidth < 479) {
+                    desiredHeight = width * 0.98;
+                } else {
+                    desiredHeight = width * 0.95; // ou tout autre facteur souhaité
+                }
+    
+                cardBack.style.height = `${desiredHeight}px`;
             }
-            cardBack.style.height = `${desiredHeight}px`;
         });
     };
     window.addEventListener('load', adjustCardBackSize);
@@ -186,5 +191,4 @@ const Realisations = () => {
     )
 }
 export default Realisations;
-
 

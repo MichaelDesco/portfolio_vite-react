@@ -1,0 +1,23 @@
+.confidential-politics{
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 3vh;
+    background-image: url(../../public/images/colorkit.webp);
+    h3{
+        text-align: center;
+        padding: 2vh 0;
+        font-size: 2rem;
+    }
+    .fa-home{
+        position: absolute;
+        top: 5%;
+        left: 2%;
+    }
+    p{
+        text-align: justify;
+        padding: 2vh 6vw;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+}

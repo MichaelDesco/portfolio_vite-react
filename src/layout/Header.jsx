@@ -15,13 +15,13 @@ const Header = () => {
                         <h1><span>Bonjour, </span>je suis Michaël DESCORCIER</h1>
                         <div className="container-link">
                             <a className="iconSocial" href="https://www.linkedin.com/in/michael-descorcier-40568a84/">
-                                <FontAwesomeIcon className="fa-linkedin" icon={faLinkedin} />
+                                <FontAwesomeIcon className="fa-linkedin iconSize" icon={faLinkedin} />
                             </a>
                             <a className="iconSocial" href="https://github.com/MichaelDesco">
-                                <FontAwesomeIcon className="fa-github" icon={faGithub} />
+                                <FontAwesomeIcon className="fa-github iconSize" icon={faGithub} />
                             </a>
                             <a className="iconSocial" href="https://discord.gg/xCNP9ZKe">
-                                <FontAwesomeIcon className="fa-discord" icon={faDiscord} />
+                                <FontAwesomeIcon className="fa-discord iconSize" icon={faDiscord} />
                             </a>
                         </div>
                     </div>

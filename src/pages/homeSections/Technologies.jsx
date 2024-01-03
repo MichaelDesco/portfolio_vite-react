@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo } from 'react';
 import './technologies.scss';
 
 const Technologies = () => {
+    // mettre dans un json
     const [technologies] = useState([
         { name: 'Node', level: 70 },
         { name: 'Express', level: 80 },
@@ -114,7 +115,7 @@ const Technologies = () => {
                         <div className="technologie" key={index} id={`technologie-${index}`}>
                             <div className='logoTechno name'>
                                 <p className='name'>{technologie.name}</p>
-                                <img src={`./images/${technologie.name.toLowerCase()}.png`} alt="" />
+                                <img src={`./images/${technologie.name.toLowerCase()}.png`} alt="logo alternatif" />
                             </div>
                         </div>
                     ))}

@@ -10,10 +10,10 @@ const Footer  = () => {
                 <nav>
                     <ul>
                         <li>
-                            <Link to= '/' className="footerLink">Mentions légales</Link>
+                            <Link to= '/Mentions-légales' className="footerLink">Mentions légales</Link>
                         </li>
                         <li>
-                            <Link to='/' className="footerLink">Politique de confidentialité</Link>
+                            <Link to='/Politique-de-confidentialité' className="footerLink">Politique de confidentialité</Link>
                         </li>
                     </ul>
                 </nav>

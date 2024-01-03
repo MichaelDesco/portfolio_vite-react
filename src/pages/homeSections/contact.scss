@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MessengerPigeons";
-    src: url("../../../public/fonts/Messenger_Pigeons/MessengerPigeons.ttf");
+    src: url("../../../public/fonts/MessengerPigeons.ttf");
 }
 .contact{
     width: 100%;
@@ -206,7 +206,7 @@
                 padding: 0.3rem 1rem;
                 border-radius: 15px;
                 background-color: #3abeff;
-                border: 2px solid #E0FF4F;
+                box-shadow: 2px 2px 4px #E9C46A;
                 color: white;
                 font-size: 1rem;
             }

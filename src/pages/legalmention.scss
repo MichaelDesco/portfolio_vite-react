@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Londrina";
+    src: url("../public/fonts/LondrinaSolid-Regular.ttf");
+}
+.legal-mention{
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 8vh;
+    h3,h4,h5,ul{
+        padding-left: 6vw; 
+    }
+    h2{
+        font-family: "Londrina";
+        text-align: center;
+        font-size: 3rem;
+        padding: 8vh 0;
+        color: #52796F;
+    }
+    h3{
+        font-size: 1.8rem;
+        margin: 2vh 0;
+    }
+    h4{
+        font-size: 1.6rem;
+        color: black;
+    }
+    h5{
+        font-size: 1.4rem;
+    }
+    .fa-home{
+        position: fixed;
+        margin-left: 1.5vw;
+        margin-top: 2.5vh;
+        font-size: 1.8rem;
+    }
+    p,ul{
+        text-align: justify;
+        padding: 2vh 6vw;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    a{
+        color: #E9C46A;
+    }
+    li{
+        list-style-type: none;
+        padding: 1vh 0;
+    }
+}

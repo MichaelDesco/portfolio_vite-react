@@ -128,4 +128,3 @@ const Langages = () => {
 };
 
 export default Langages;
-
