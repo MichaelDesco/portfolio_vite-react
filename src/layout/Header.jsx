@@ -1,6 +1,6 @@
 import "./header.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin , faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin , faGithub } from "@fortawesome/free-brands-svg-icons";
 
 
 const Header = () => {
@@ -19,9 +19,6 @@ const Header = () => {
                             </a>
                             <a className="iconSocial" href="https://github.com/MichaelDesco">
                                 <FontAwesomeIcon className="fa-github iconSize" icon={faGithub} />
-                            </a>
-                            <a className="iconSocial" href="https://discord.gg/xCNP9ZKe">
-                                <FontAwesomeIcon className="fa-discord iconSize" icon={faDiscord} />
                             </a>
                         </div>
                     </div>
