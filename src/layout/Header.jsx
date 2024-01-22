@@ -24,9 +24,6 @@ const Header = () => {
                     </div>
                     <h2>DÉVELOPPEUR D'APPLICATION WEB</h2>
                 </div>
-                <div className="container-laptop-picture">
-                    <img className="laptop-picture" src="../images/sticker.webp" alt="" />
-                </div>
             </div>
         </>
     )

@@ -10,11 +10,14 @@
 .headerTop{
     width: 100%;
     padding: 2vh 2vw;
-    background-color: #8EB5AC;
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
     color: white;
+    background-image:url("../../public/images/back7.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     @media screen and (max-width: 767px){
         justify-content: center;
     }
@@ -143,7 +146,7 @@
             font-family: "Rubik", monospace;
             font-size: 2.2rem;
             font-weight: lighter;
-            text-shadow: 1px 1px 2px grey;
+            text-shadow: 1px 1px 2px black;
             word-spacing: 1rem;
             color: #E9C46A;
             overflow: hidden;
@@ -198,18 +201,6 @@
             100% {
             opacity: 1;
             }
-        }
-    }
-  
-    .container-laptop-picture{
-        display: flex;
-        justify-self: flex-end;
-        margin-left: auto;
-        @media screen and (max-width: 479px){
-            display: none;
-        }
-        .laptop-picture{
-            width: 10vw;
         }
     }
 }
