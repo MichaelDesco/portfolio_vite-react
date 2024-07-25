@@ -7,9 +7,6 @@ const Header = () => {
     return (
         <>
             <div className="headerTop">
-                <div className="container-profil-picture">
-                    <img className="profil-picture" src="../images/avatar.webp" alt="" />
-                </div> 
                 <div className="header-title">
                     <div className="headerNameLink">
                         <h1><span>Bonjour, </span>je suis Michaël DESCORCIER</h1>

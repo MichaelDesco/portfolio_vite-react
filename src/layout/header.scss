@@ -9,40 +9,35 @@
 
 .headerTop{
     width: 100%;
-    padding: 2vh 2vw;
+    padding: 7vh 5vw 5vh;
     position: relative;
     display: flex;
     align-items: center;
     color: white;
-    background-image:url("../../public/images/back7.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+    
     @media screen and (max-width: 767px){
         justify-content: center;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:url("../../public/images/back7.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        -webkit-animation: headerTop 5s ease-in-out 3s infinite alternate both;
+        animation: headerTop 5s ease-in-out 3s infinite alternate both;
+        z-index: -1;
     }
     // @media screen and (max-width: 1023px){
     //     @media screen and (orientation: landscape){
     //         height: 30vh;
     //     }
     // }
-    
-
-    .container-profil-picture{
-        display: flex;
-        justify-content: center;
-        margin-right: 2vw;
-        @media screen and (max-width: 767px){
-            margin-bottom: 7vh;
-            margin-right: 0;
-        }
-        @media screen and (max-width: 479px){
-            display: none;
-        }
-        .profil-picture{
-            width: 9vw;
-        }
-    }
 
     .header-title{  
         height: 16vh;
@@ -121,7 +116,6 @@
             .container-link{
                 display: flex;
                 align-items: center;
-                width: 15vw;
 
                 a{
                     background-color: white;
@@ -144,15 +138,16 @@
         }
         h2 {
             font-family: "Rubik", monospace;
-            font-size: 2.2rem;
+            font-size: 2.3rem;
             font-weight: lighter;
-            text-shadow: 1px 1px 2px black;
+            text-shadow: 1px 1px 8px black;
             word-spacing: 1rem;
             color: #E9C46A;
             overflow: hidden;
             white-space: nowrap;
             position: relative;
-            animation: typing 2s steps(24);
+            padding-right: 0.5vw;
+            animation: typing 2s steps(28);
             @media screen and (max-width: 1277px){
                 font-size: 2.1rem;
             }
@@ -185,8 +180,9 @@
             position: absolute;
             display: block;
             height: 70%;
-            width:2px;
+            width:1px;
             background: #dadada;
+            border: 1px solid #3abeff;
             right: 0;
             top: 15%;
             animation: cursor 1s infinite;
@@ -203,6 +199,34 @@
             }
         }
     }
+    @-webkit-keyframes headerTop {
+        0% {
+          -webkit-transform: scale(1) translateY(0);
+                  transform: scale(1) translateY(0);
+          -webkit-transform-origin: 50% 16%;
+                  transform-origin: 50% 16%;
+        }
+        100% {
+          -webkit-transform: scale(1.25) translateY(-15px);
+                  transform: scale(1.25) translateY(-15px);
+          -webkit-transform-origin: top;
+                  transform-origin: top;
+        }
+      }
+      @keyframes headerTop {
+        0% {
+          -webkit-transform: scale(1) translateY(0);
+                  transform: scale(1) translateY(0);
+          -webkit-transform-origin: 50% 16%;
+                  transform-origin: 50% 16%;
+        }
+        100% {
+          -webkit-transform: scale(1.25) translateY(-15px);
+                  transform: scale(1.25) translateY(-15px);
+          -webkit-transform-origin: top;
+                  transform-origin: top;
+        }
+      }
 }
 
 

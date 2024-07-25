@@ -4,28 +4,31 @@ import { faHome, faFeatherPointed, faBars } from '@fortawesome/free-solid-svg-ic
 import './menu.scss';
 
 const Menu = () => {
-    const [isSticky, setIsSticky] = useState(false);
+    const [isSticky, setIsSticky] = useState(false); // Ajout de l'état pour le menu collant
     const [isMenuOpen, setIsMenuOpen] = useState(false); // Ajout de l'état pour le menu déroulant
-    const backToTopRef = useRef(null);
-    const btnContactRef = useRef(null);
-    const btnFormationRef = useRef(null);
-    const btnRealisationsRef = useRef(null);
-    const btnlangagesRef = useRef(null);
-    const btntechnologiesRef = useRef(null);
+    const backToTopRef = useRef(null); // Ajout de la référence pour le bouton de retour en haut
+    const btnContactRef = useRef(null); // Ajout de la référence pour le bouton de contact
+    const btnFormationRef = useRef(null); // Ajout de la référence pour le bouton de formation
+    const btnRealisationsRef = useRef(null); // Ajout de la référence pour le bouton de réalisations
+    const btnlangagesRef = useRef(null); // Ajout de la référence pour le bouton de langages
+    const btntechnologiesRef = useRef(null); // Ajout de la référence pour le bouton de technologies
     const menuContainerRef = useRef(null); // Ajout de la référence pour le menu déroulant
 
     useEffect(() => {
-        const backToTop = backToTopRef.current;
+        const backToTop = backToTopRef.current; 
         const btnContact = btnContactRef.current;
         const btnFormation = btnFormationRef.current;
         const btnRealisations = btnRealisationsRef.current;
         const btnlangages = btnlangagesRef.current;
         const btntechnologies = btntechnologiesRef.current;
-        const handleScroll = () => {
-            if (window.innerWidth <= 767 && isMenuOpen) {
-                setIsMenuOpen(false);
-            }
 
+        // Ajout de l'écouteur d'événement pour le scroll du menu sticky
+        const handleScroll = () => {
+            // le menu devient derourlant si la largeur de la fenêtre est inférieure à 767px
+            if (window.innerWidth <= 767 && isMenuOpen) {
+                setIsMenuOpen(false); 
+            }
+            // le menu devient collant si le scroll est supérieur à 180px
             if (backToTop && window.scrollY < 180) {
                 setIsSticky(false);
                 backToTop.style.display = "none";
@@ -140,7 +143,12 @@ const Menu = () => {
                             </li>
                         </div>
                     </ul>
-                    <FontAwesomeIcon className="fa-bars" icon={faBars} onClick={handleMenuToggle}/>
+                    <FontAwesomeIcon className="hamburger hamburger--emphatic fa-bars" icon={faBars} onClick={handleMenuToggle}>
+                        <span className="hamburger-box">
+                            <span className="hamburger-inner"></span>
+                        </span>
+                    </FontAwesomeIcon>
+
                 </nav>
             </div>
         </>

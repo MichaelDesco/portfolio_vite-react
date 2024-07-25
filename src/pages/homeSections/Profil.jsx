@@ -19,9 +19,9 @@ const Profil = () => {
             <div className="actuellement">
                 <h4>Actuellement</h4>
                 <p>
-                    <span className='mot mot1'>EN </span> 
-                    <span className='mot mot2'>RECHERCHE </span> 
-                    <span className='mot mot3'>D'EMPLOI</span>
+                    <span className='mot mot1'>EN RECHERCHE</span>
+                    <span className='mot mot2'>D'UN POSTE DE</span>
+                    <span className='mot mot3'>DEVELOPPEUR WEB</span>
                 </p>
             </div>
         </>
