@@ -53,7 +53,13 @@ const RealisationsTransitions: React.FC = () => {
     []
   );
 
-  return <TransitionList items={paragraphs} intervalTime={6000} />;
+  return (
+    <TransitionList
+      items={paragraphs}
+      intervalTime={6000}
+      useQuotesTransition={false}
+    />
+  );
 };
 
 export default RealisationsTransitions;

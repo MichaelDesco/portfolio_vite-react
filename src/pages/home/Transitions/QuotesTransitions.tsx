@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import TransitionList from "../../../components/TransitionList/TransitionList";
-import "./quotes-transitions.scss";
 
 // Définition des citations
 const QuotesTransitions: React.FC = () => {
@@ -57,7 +56,13 @@ const QuotesTransitions: React.FC = () => {
     []
   );
 
-  return <TransitionList items={paragraphs} intervalTime={6000} />;
+  return (
+    <TransitionList
+      items={paragraphs}
+      intervalTime={6000}
+      useQuotesTransition={true}
+    />
+  );
 };
 
 export default QuotesTransitions;

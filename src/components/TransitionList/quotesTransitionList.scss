@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "MessengerPigeons";
+  src: url("../../../public/fonts/MessengerPigeons.ttf");
+}
+
+#quotes-transition {
+  .autorTransition,
+  .quoteTransition {
+    font-family: MessengerPigeons;
+  }
+  .quoteTransition {
+    font-size: 2rem;
+  }
+  .autorTransition {
+    font-size: 1.4rem;
+    transform: translateX(60vw);
+    width: 25vw;
+  }
+}
+.container-quotes-transition {
+  padding: 12vh 0;
+  .transition {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: MessengerPigeons;
+
+    p {
+      font-size: 1.4rem;
+
+      @media screen and (max-width: 767px) {
+        line-height: 25px;
+        font-size: 1.2rem;
+      }
+
+      @media screen and (max-width: 479px) {
+        line-height: 20px;
+        font-size: 1rem;
+      }
+    }
+
+    h2 {
+      color: #52796f;
+      font-size: 2.2rem;
+
+      @media screen and (max-width: 767px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: 479px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .transition-paragraph {
+      width: 70vw;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+      transition: opacity 2s ease-in-out;
+
+      @media screen and (max-width: 1023px) {
+        width: 80%;
+      }
+      @media screen and (max-width: 767px) {
+        width: 90%;
+      }
+    }
+
+    .transition-paragraph.show {
+      opacity: 1;
+      visibility: visible;
+      animation: fadeIn 2s forwards;
+    }
+
+    .transition-paragraph.fade-out {
+      opacity: 0;
+      visibility: hidden;
+      animation: fadeOut 2s forwards;
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        visibility: visible;
+      }
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
