@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "MessengerPigeons";
+  src: url("/fonts/MessengerPigeons.ttf");
+}
+
+// Déclaration de variables SCSS pour une meilleure maintenabilité
+$color-primary: #e9c46a;
+$color-secondary: #52796f;
+$breakpoint-md: 1023px;
+$breakpoint-sm: 767px;
+$breakpoint-xs: 479px;
+
+.contact {
+  position: relative;
+  background-image: url("/images/colorkit2.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8vh 0 15vh;
+  width: 100vw;
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    h3 {
+      font-size: 2rem;
+      color: $color-primary;
+    }
+    .fieldsForm {
+      padding: 5vh 0;
+      display: flex;
+      justify-content: space-evenly;
+
+      @media screen and (max-width: $breakpoint-sm) {
+        flex-direction: column;
+      }
+      label {
+        display: block;
+      }
+      .contactInfo {
+        width: 20vw;
+        @media screen and (max-width: $breakpoint-sm) {
+          width: 80vw;
+        }
+        input {
+          width: 20vw;
+          @media screen and (max-width: $breakpoint-sm) {
+            width: 80vw;
+          }
+        }
+        .contactId {
+          margin-bottom: 2vh;
+        }
+      }
+      .contactContenu {
+        width: 50vw;
+        input,
+        textarea {
+          width: 50vw;
+          @media screen and (max-width: $breakpoint-sm) {
+            width: 80vw;
+          }
+        }
+        textarea {
+          height: 14.5vh;
+        }
+        .contactObject {
+          margin-bottom: 2vh;
+        }
+      }
+    }
+    .contactSubmit {
+      position: relative;
+      width: 73vw;
+      margin: auto;
+      .requiredLabel {
+        color: $color-secondary;
+        padding: 3vh 5vw;
+        span {
+          color: white;
+          font-weight: bolder;
+        }
+      }
+      input {
+        float: left;
+        margin-right: 0.5vw;
+      }
+      .btnSendEmail {
+        position: absolute;
+        right: 10vw;
+        margin: 3vh 0;
+        padding: 0.3rem 1rem;
+        border-radius: 15px;
+
+        font-weight: bolder;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid #3abeff;
+        color: #3abeff;
+
+        &:hover {
+          background-color: #3abeff;
+          color: white;
+          font-weight: bold;
+          box-shadow: 2px 2px 4px $color-primary;
+        }
+      }
+    }
+  }
+}
+
+p {
+  text-align: justify;
+
+  .footerLink {
+    text-shadow: none;
+    text-decoration: none;
+    white-space: nowrap;
+
+    @media screen and (max-width: $breakpoint-xs) {
+      white-space: wrap;
+    }
+  }
+}
+
+// #quote {
+//   font-family: "MessengerPigeons";
+//   text-shadow: none;
+//   font-size: 2rem;
+//   padding: 0 5vw;
+// }

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,120 +6,140 @@
 
 @font-face {
   font-family: "Londrina";
-  src: url("../public/fonts/LondrinaSolid-Regular.ttf");
+  src: url("/fonts/LondrinaSolid-Regular.ttf");
 }
-body{
+
+body {
   width: 100%;
 }
-h1, .btnContact, .btnMenu, h3, h4, .titleTransition, .autorTransition .cvDownload, .footerLink, button, label{
+h1,
+.btnContact,
+.btnMenu,
+h3,
+h4,
+.titleTransition,
+.autorTransition .cvDownload,
+.footerLink,
+button,
+label,
+.requiredLabel {
   font-family: "Londrina";
   text-shadow: 1px 2px 2px black;
   letter-spacing: 1.8px;
 }
 
-label{
+label {
   color: white;
 }
-input, textarea{
+input,
+textarea {
   border: none;
 }
-h3,h4, .titleTransition{
-  color: #52796F;
+h3,
+h4,
+.titleTransition {
+  color: #52796f;
 }
-h3{
+h3 {
   font-size: 1.9rem;
-  @media screen and (max-width: 1277px){
-      font-size: 1.8rem;              
+  @media screen and (max-width: 1277px) {
+    font-size: 1.8rem;
   }
-  @media screen and (max-width: 1023px){
-      font-size: 1.7rem;
-      // orientation: landscape{
-      //     font-size: 1.3rem;
-      // }    
+  @media screen and (max-width: 1023px) {
+    font-size: 1.7rem;
+    // orientation: landscape{
+    //     font-size: 1.3rem;
+    // }
   }
-  @media screen and (max-width: 767px){
-      font-size: 1.6rem;    
+  @media screen and (max-width: 767px) {
+    font-size: 1.6rem;
   }
-  @media screen and (max-width: 479px){
-      font-size: 1.5rem;    
+  @media screen and (max-width: 479px) {
+    font-size: 1.5rem;
   }
-  @media screen and (max-width: 279px){
-      font-size: 1.3rem;    
+  @media screen and (max-width: 279px) {
+    font-size: 1.3rem;
   }
 }
-h4{
+h4 {
   font-size: 2rem;
-  @media screen and (max-width: 1277px){
-      font-size: 1.9rem;              
+  @media screen and (max-width: 1277px) {
+    font-size: 1.9rem;
   }
-  @media screen and (max-width: 1023px){
-      font-size: 1.8rem;
-      // orientation: landscape{
-      //     font-size: 1.5rem;
-      // }    
+  @media screen and (max-width: 1023px) {
+    font-size: 1.8rem;
+    // orientation: landscape{
+    //     font-size: 1.5rem;
+    // }
   }
-  @media screen and (max-width: 767px){
-      font-size: 1.7rem;    
+  @media screen and (max-width: 767px) {
+    font-size: 1.7rem;
   }
-  @media screen and (max-width: 479px){
-      font-size: 1.6rem;    
+  @media screen and (max-width: 479px) {
+    font-size: 1.6rem;
   }
-  @media screen and (max-width: 279px){
-      font-size: 1.5rem;    
+  @media screen and (max-width: 279px) {
+    font-size: 1.5rem;
   }
 }
 
 @font-face {
   font-family: "Spartan";
-  src: url("../public/fonts/LeagueSpartan-VariableFont_wght.ttf");
+  src: url("/fonts/LeagueSpartan-VariableFont_wght.ttf");
 }
-p, .langage, .transitionParagraph{
+p,
+.langage,
+.transitionParagraph {
   font-family: "Spartan";
 }
-.transition span, .transition2 span, .transition3 span{
+.transition span,
+.transition2 span,
+.transition3 span {
   font-size: 1.8rem;
-  @media screen and (max-width: 1277px){
-      font-size: 1.7rem;                
+  @media screen and (max-width: 1277px) {
+    font-size: 1.7rem;
   }
-  @media screen and (max-width: 1023px){
-      font-size: 1.6rem;
+  @media screen and (max-width: 1023px) {
+    font-size: 1.6rem;
   }
-  @media screen and (max-width: 767px){
-      font-size: 1.4rem;
+  @media screen and (max-width: 767px) {
+    font-size: 1.4rem;
   }
-  @media screen and (max-width: 479px){
-      font-size: 1.2rem;
+  @media screen and (max-width: 479px) {
+    font-size: 1.2rem;
   }
-  @media screen and (max-width: 279px){
-      font-size: 1rem;    
+  @media screen and (max-width: 279px) {
+    font-size: 1rem;
   }
 }
-.transition p, .transition2 p, .transition3 p{
+.transition p,
+.transition2 p,
+.transition3 p {
   font-size: 1.6rem;
-  @media screen and (max-width: 1277px){
-      font-size: 1.5rem;                
+  @media screen and (max-width: 1277px) {
+    font-size: 1.5rem;
   }
-  @media screen and (max-width: 1023px){
-      font-size: 1.4rem;
+  @media screen and (max-width: 1023px) {
+    font-size: 1.4rem;
   }
-  @media screen and (max-width: 767px){
-      font-size: 1.2rem;
+  @media screen and (max-width: 767px) {
+    font-size: 1.2rem;
   }
-  @media screen and (max-width: 479px){
-      font-size: 1rem;
+  @media screen and (max-width: 479px) {
+    font-size: 1rem;
   }
-  @media screen and (max-width: 279px){
-      font-size: 0.8rem;    
+  @media screen and (max-width: 279px) {
+    font-size: 0.8rem;
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.btnContact{
+.btnContact {
   display: flex;
   position: absolute;
   right: 2vw;
@@ -127,53 +147,67 @@ p, .langage, .transitionParagraph{
   text-decoration: none;
   overflow: hidden;
   font-size: 1.5rem;
-  p{
-      // border-bottom: 2px solid #3abeff;
-      font-weight: bolder;
-      color: #E0FF4F;
-      &:hover{
-          color: #3abeff;
-          border-bottom: 3px solid #E0FF4F;
-      }
+  p {
+    // border-bottom: 2px solid #3abeff;
+    font-weight: bolder;
+    color: #e0ff4f;
+    &:hover {
+      color: #3abeff;
+      border-bottom: 3px solid #e0ff4f;
+    }
   }
 }
 
-
 /* Largeur de la barre de défilement */
 ::-webkit-scrollbar {
-  display: none;   
+  display: none;
 }
 
 /* Champ du formulaire */
-input, textarea{
+input,
+textarea {
   padding: 0.5vh 0.5vw;
 }
 
-// ANIMATION TEXT TRANSITION 
-.mot{
+// ANIMATION TEXT TRANSITION
+.mot {
   animation: color-animation 4s linear infinite;
 }
-.mot1{
-  --color-1: #E0FF4F;
-  --color-2: #52796F;
-  --color-3: #E9C46A;
+.mot1 {
+  --color-1: #e0ff4f;
+  --color-2: #52796f;
+  --color-3: #e9c46a;
 }
-.mot2{
+.mot2 {
   --color-1: #3abeff;
-  --color-2: #E0FF4F;
-  --color-3: #52796F;
+  --color-2: #e0ff4f;
+  --color-3: #52796f;
 }
-.mot3{
-  --color-1: #E9C46A;
+.mot3 {
+  --color-1: #e9c46a;
   --color-2: #3abeff;
-  --color-3: #E0FF4F;
+  --color-3: #e0ff4f;
 }
 @keyframes color-animation {
-  0%    {color: var(--color-1)}
-  32%   {color: var(--color-1)}
-  33%   {color: var(--color-2)}
-  65%   {color: var(--color-2)}
-  66%   {color: var(--color-3)}
-  99%   {color: var(--color-3)}
-  100%  {color: var(--color-1)}
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
 }

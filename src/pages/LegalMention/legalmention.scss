@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Londrina";
+  src: url("/fonts/LondrinaSolid-Regular.ttf");
+}
+.legal-mention {
+  margin-right: 0;
+  margin-left: 0;
+  padding-bottom: 8vh;
+  background-image: url(/images/colorkit.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-family: "Londrina";
+    font-size: 3rem;
+    padding: 8vh 0;
+    color: #52796f;
+  }
+  .homeMention {
+    font-size: 1.8rem;
+  }
+  p {
+    padding: 2vh 6vw;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}

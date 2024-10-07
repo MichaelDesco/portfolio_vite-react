@@ -1,0 +1,30 @@
+#header-home {
+  overflow: hidden;
+  position: relative; // Ajout de cette propriété pour que l'élément pseudo `::before` soit bien positionné par rapport à l'élément parent.
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-image: url("/images/back7.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    animation: zoomEffect 5s ease-in-out infinite alternate both; // Modification du nom et de la durée.
+    z-index: -1;
+  }
+
+  @keyframes zoomEffect {
+    0% {
+      transform: scale(1);
+      transform-origin: center;
+    }
+    100% {
+      transform: scale(1.25);
+      transform-origin: center;
+    }
+  }
+}

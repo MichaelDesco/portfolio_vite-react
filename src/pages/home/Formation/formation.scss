@@ -1,0 +1,130 @@
+//
+.formation {
+  position: relative;
+  width: 100%;
+  background-image: url("/images/colorkit2reverse.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 1024px) {
+    height: auto;
+  }
+
+  .formationTitle {
+    width: 100%;
+    display: inline-block;
+    padding: 8vh 4vw 5vh;
+  }
+
+  .parcours {
+    margin: 0 auto 0 auto;
+    padding-bottom: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      height: auto;
+      // padding: 5vh 0;
+    }
+    .introParcours {
+      padding: 7vh 3vw;
+      background-color: white;
+      box-shadow: 3px 5px 8px black;
+      position: relative;
+      @media screen and (max-width: 1024px) {
+        width: 80vw;
+        margin-bottom: 5vh;
+        text-align: center;
+        // display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .experience {
+        padding: 0.4vh 0;
+        .experienceInfo {
+          display: flex;
+          justify-content: stretch;
+          @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+          }
+          .experienceImg {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            img {
+              height: 4vh;
+              float: left;
+              margin-right: 2vw;
+            }
+          }
+          p:first-of-type {
+            color: #52796f;
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+        }
+        .experienceInfo:not(last-child) {
+          margin-bottom: 4vh;
+        }
+        .experienceDescription {
+          width: 60%;
+          @media screen and (max-width: 767px) {
+            margin: 1vh auto 0 auto;
+            width: 100%;
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .cvParcours {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1vh 4vw;
+      background-color: white;
+      box-shadow: 3px 5px 8px black;
+      @media screen and (max-width: 1024px) {
+        width: 80vw;
+      }
+      .cvTitle {
+        text-align: center;
+        margin: 2vh 0;
+      }
+      img {
+        box-shadow: 1px 1px 3px black;
+        height: 38vh;
+        @media screen and (max-width: 1024px) {
+          height: auto;
+          width: 70vw;
+        }
+        &:hover {
+          height: auto;
+          position: absolute;
+          right: 10%;
+          top: 15%;
+          width: 80vw;
+          z-index: 999;
+          @media screen and (max-width: 1024px) {
+            position: relative;
+            width: 70vw;
+            right: 0;
+          }
+        }
+      }
+      .cvDownload {
+        margin-top: 3vh;
+        .fa-download {
+          color: #3abeff;
+          font-size: 1.8rem;
+          text-shadow: 1px 1px 1px #e0ff4f;
+        }
+      }
+    }
+  }
+}
