@@ -19,6 +19,9 @@
 }
 .container-quotes-transition {
   padding: 12vh 0;
+  @media screen and (max-width: 767px) {
+    padding: 25vh 0;
+  }
   .transition {
     position: relative;
     display: flex;

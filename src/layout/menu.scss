@@ -42,14 +42,13 @@
     @media screen and (max-width: 767px) {
       flex-direction: column;
       align-items: center;
-      min-height: 4vh;
     }
     li {
       width: 20vw;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      height: 4vh;
+      height: 3vh;
       // @media screen and (max-width: 1023px){
       //     @media screen and (orientation: landscape){
       //         height: 7vh;
@@ -91,16 +90,14 @@
       }
     }
     &.open {
+      margin: 2vh 0;
       li {
         display: flex;
         justify-content: center;
-        align-items: center;
         height: 4vh;
-        // @media screen and (max-width: 1023px){
-        //     @media screen and (orientation: landscape){
-        //         height: 7vh;
-        //     }
-        // }
+        @media screen and (orientation: landscape) {
+          height: 7vh;
+        }
         .btnMenu {
           text-decoration: none;
           font-weight: bolder;
