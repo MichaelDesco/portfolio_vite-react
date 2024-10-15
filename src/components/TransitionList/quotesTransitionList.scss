@@ -3,76 +3,48 @@
   src: url("../../../public/fonts/MessengerPigeons.ttf");
 }
 
-#quotes-transition {
-  .autorTransition,
+.container-quotes-transition {
+  height: 23vh;
+  width: 100vw;
+
+  position: relative;
+
   .quoteTransition {
-    font-family: MessengerPigeons;
-  }
-  .quoteTransition {
-    font-size: 2rem;
+    margin: 2vh 0;
+    text-align: left;
+    font-size: var(--thirdSize);
+    @media screen and (max-width: 767px) {
+      font-size: var(--fourthSize);
+    }
+    @media screen and (max-width: 479px) {
+      font-size: var(--fifthSize);
+    }
   }
   .autorTransition {
+    text-align: right;
+    font-family: MessengerPigeons;
     font-size: 1.4rem;
-    transform: translateX(60vw);
-    width: 25vw;
+    color: var(--mainColor);
+    font-size: var(--secondSize);
+    @media screen and (max-width: 767px) {
+      font-size: var(--thirdSize);
+    }
+    @media screen and (max-width: 479px) {
+      font-size: var(--fourthSize);
+    }
   }
 }
 .container-quotes-transition {
-  padding: 12vh 0;
-  @media screen and (max-width: 767px) {
-    padding: 25vh 0;
-  }
-  .transition {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: MessengerPigeons;
-
-    p {
-      font-size: 1.4rem;
-
-      @media screen and (max-width: 767px) {
-        line-height: 25px;
-        font-size: 1.2rem;
-      }
-
-      @media screen and (max-width: 479px) {
-        line-height: 20px;
-        font-size: 1rem;
-      }
-    }
-
-    h2 {
-      color: #52796f;
-      font-size: 2.2rem;
-
-      @media screen and (max-width: 767px) {
-        font-size: 1.5rem;
-      }
-
-      @media screen and (max-width: 479px) {
-        font-size: 1.4rem;
-      }
-    }
-
+  .quotes-transition {
     .transition-paragraph {
       width: 70vw;
       opacity: 0;
       visibility: hidden;
       position: absolute;
-      bottom: 50%;
-      right: 50%;
-      transform: translate(50%, 50%);
-      transition: opacity 2s ease-in-out;
-
-      @media screen and (max-width: 1023px) {
-        width: 80%;
-      }
-      @media screen and (max-width: 767px) {
-        width: 90%;
-      }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // transition: opacity 2s ease-in-out;
     }
 
     .transition-paragraph.show {

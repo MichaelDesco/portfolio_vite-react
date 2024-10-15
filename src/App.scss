@@ -1,3 +1,33 @@
+:root{
+  /* Couleurs */
+  --mainColor: #3abeff;
+  --secondColor: #e0ff4f;
+  --thirdColor: #52796f;
+  --fourthColor: #f7f7f7;
+  --fifthColor: #000000;
+  --sixthColor: #ffffff;
+  --seventhColor: #ff0000;
+  --eighthColor: #ff00ff;
+  --ninthColor: #00ff00;
+  --tenthColor: #00ffff;
+  --eleventhColor: #ffff00;
+
+  /* Sizes */
+  --mainSize: 2rem;
+  --secondSize: 1.8rem;
+  --thirdSize: 1.6rem;
+  --fourthSize: 1.4rem;
+  --fifthSize: 1.2rem;
+  --sixthSize: 1rem;
+
+  /* Fonts */
+  --mainFont: "Londrina";
+  --secondFont: "Spartan";
+  --thirdFont: "MessengerPigeons";
+  --fourthFont: "LeagueSpartan";
+  --fifthFont: "Roboto";
+}
+
 * {
   margin: 0;
   padding: 0;

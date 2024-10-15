@@ -9,30 +9,23 @@ const Profil: React.FC = () => {
           <h3>À propos de moi</h3>
           <div className="apropos-paragraphes">
             <p>
-              Enthousiaste à l&#39;idée de faire du développement ma profession,
-              j&#39;ai entamé une formation à &quot;La Piscine&quot; à Mérignac
-              en Gironde où j&#39;ai acquis les bases pour concevoir des sites
-              web fonctionnels, aux visuels attrayants, intégrant des données.
+              Développeur web passionné, j'ai acquis des compétences solides à
+              travers ma formation à "La Piscine" de Mérignac et des expériences
+              professionnelles, notamment sur un projet de génération
+              d'écritures comptables chez "Avista". J'ai également perfectionné
+              mes compétences grâce à une POEC Java Fullstack, où j'ai renforcé
+              ma capacité à m'adapter à différents environnements et outils.
             </p>
             <p>
-              A la suite de la formation, j&#39;ai participé au développement
-              d&#39;un projet de génération d&#39;écritures comptables pour la
-              société &quot;Avista&quot; à Bordeaux. J&#39;ai pu me confronter à
-              la réalité du métier de développeur web, et ressort de cette
-              expérience encore plus enthousiaste et motivé.
+              Toujours en quête de nouvelles solutions, je suis prêt à relever
+              les défis qui me seront confiés, à travailler en équipe, et à
+              rester à jour dans un secteur en constante évolution, car ce
+              métier est avant tout une source d'épanouissement.
             </p>
             <p>
-              En juillet 2024, j&#39;ai intégré une POEC Java Fullstack où
-              j&#39;ai pu perfectionner mes compétences acquises mais aussi
-              évoluer sur d&#39;autres langages et me tester sur d&#39;autres
-              outils et environnements de travail. Cette formation m&#39;a
-              permis de confirmer mes capacités d&#39;apprentissage et
-              d&#39;adaptation.
-            </p>
-            <p>
-              Bien que je ne bénéficie pas d&#39;une longue expérience, ma
-              passion pour ce métier est un réel épanouissement qui me pousse à
-              m&#39;investir pleinement afin d&#39;évoluer dans mes objectifs.
+              Si mon profil correspond à vos attentes et que vous souhaitez en
+              savoir plus, je serai ravi de discuter de vos projets et de
+              répondre à vos questions.
             </p>
           </div>
         </div>

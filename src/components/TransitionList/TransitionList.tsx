@@ -22,9 +22,13 @@ const TransitionList: React.FC<TransitionListProps> = ({
     ? "container-quotes-transition"
     : "container-transition";
 
+  const transitionClass = useQuotesTransition
+    ? "quotes-transition"
+    : "transition";
+
   return (
-    <div className={containerClass} id="quotes-transition">
-      <div className="transition">
+    <div className={containerClass}>
+      <div className={transitionClass}>
         {items.map((paragraph, index) => (
           <div
             key={index}

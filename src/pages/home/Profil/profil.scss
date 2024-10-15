@@ -4,7 +4,7 @@
   // background-size: cover;
   // background-repeat: no-repeat;
   width: 100%;
-  padding: 8vh 0;
+  padding: 9vh 0;
   display: flex;
   align-items: center;
   @media screen and (max-width: 767px) {
@@ -41,12 +41,16 @@
     .apropos-paragraphes {
       padding: 4vh 0;
       p {
+        line-height: 25px;
         padding: 1.5vh 0;
         font-size: 1.2rem;
         text-align: justify;
         @media screen and (max-width: 479px) {
           font-size: 0.95rem;
         }
+      }
+      p:first-of-type {
+        text-indent: 20px;
       }
     }
   }
