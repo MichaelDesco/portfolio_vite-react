@@ -48,7 +48,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      height: 3vh;
+      // height: 3vh;
       // @media screen and (max-width: 1023px){
       //     @media screen and (orientation: landscape){
       //         height: 7vh;
@@ -90,49 +90,51 @@
       }
     }
     &.open {
-      margin: 2vh 0;
-      li {
-        display: flex;
-        justify-content: center;
-        height: 4vh;
-        @media screen and (orientation: landscape) {
-          height: 7vh;
-        }
-        .btnMenu {
-          text-decoration: none;
-          font-weight: bolder;
-          font-size: 1.4rem;
-          color: white;
-          transition: font-size 1s; /* Ajout d'une transition pour un changement de taille plus fluide */
-          text-align: center;
-          white-space: nowrap;
-          cursor: pointer;
-          @media screen and (max-width: 1023px) {
-            font-size: 1.1rem;
+      @media screen and (max-width: 767px) {
+        margin: 2vh 0;
+        li {
+          display: flex;
+          justify-content: center;
+          height: 4vh;
+          @media screen and (orientation: landscape) {
+            height: 7vh;
           }
-          @media screen and (max-width: 767px) {
-            font-size: 1rem;
-          }
-          &:hover {
-            font-size: 1.6rem;
-            transition: padding-top 0.3s;
+          .btnMenu {
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 1.4rem;
+            color: white;
+            transition: font-size 1s; /* Ajout d'une transition pour un changement de taille plus fluide */
+            text-align: center;
+            white-space: nowrap;
+            cursor: pointer;
             @media screen and (max-width: 1023px) {
-              font-size: 1.2rem;
-            }
-            @media screen and (max-width: 767px) {
               font-size: 1.1rem;
-              padding-top: 0;
             }
-          }
-          .fa-feather-pointed {
-            color: #3abeff;
             @media screen and (max-width: 767px) {
-              display: none;
+              font-size: 1rem;
             }
             &:hover {
-              font-size: 1.55rem;
-              .fa-feather-pointed {
-                color: #e0ff4f;
+              font-size: 1.6rem;
+              transition: padding-top 0.3s;
+              @media screen and (max-width: 1023px) {
+                font-size: 1.2rem;
+              }
+              @media screen and (max-width: 767px) {
+                font-size: 1.1rem;
+                padding-top: 0;
+              }
+            }
+            .fa-feather-pointed {
+              color: #3abeff;
+              @media screen and (max-width: 767px) {
+                display: none;
+              }
+              &:hover {
+                font-size: 1.55rem;
+                .fa-feather-pointed {
+                  color: #e0ff4f;
+                }
               }
             }
           }
